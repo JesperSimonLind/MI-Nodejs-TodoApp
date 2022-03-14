@@ -1,0 +1,9 @@
+<h2>&lt;/Todo: {{description}}&gt;/</h2>
+<p>Date Created:</p>
+<p class="created-date">{{created}} </p>
+<div class="buttons">
+  <a class="btn btn--edit" href="/todos/{{_id}}/edit">Edit todo</a>
+  <form action="/todos/{{_id}}/ta-bort" method="post">
+    <input class="btn btn--delete" type="submit" value="Ta bort" />
+  </form>
+</div>

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+* {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #191414;
+  font-family: monospace;
+  font-weight: lighter;
+
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+a,
+a:visited {
+  color: #1ed760;
+  font-size: 1.5rem;
+}
+li {
+  list-style: none;
+}
+li,
+nav {
+  margin: 0.5em 0;
+  color: #1ed760;
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #1ed760;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.todo-input,
+.edit-input {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+}
+
+.create-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.saveButton {
+  background-color: #1ed760;
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  border: none;
+  color: #1ed760;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn--new {
+  background-color: #154638;
+  margin-left: 15px;
+}
+.btn--edit,
+.btn--save {
+  background-color: #154638;
+  font-size: 1.2rem;
+}
+
+.btn--new:hover,
+.btn--edit:hover,
+.btn--new:hover {
+  background-color: #11382d;
+}
+
+.btn--delete {
+  background-color: rgb(145, 2, 2);
+}
+
+.btn--delete:hover {
+  background-color: rgb(112, 0, 0);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.delete-button {
+  margin-top: 15px;
+}
+h1,
+h2 {
+  color: #1ed760;
+  font-size: 4rem;
+}
+
+.todo.false {
+  text-decoration: none;
+}
+
+.todo.true {
+  text-decoration: line-through;
+}
+
+.created-date {
+  color: #1ed760;
+}
+
+.edit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.complete-container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sort {
+  margin: 35px;
+}

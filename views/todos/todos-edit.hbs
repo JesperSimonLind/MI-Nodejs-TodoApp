@@ -1,0 +1,20 @@
+<h2>&lt;/Edit Todo: {{description}}&gt;/</h2>
+<p>Date Created:</p>
+<p class="created-date">{{created}}</p>
+<div class="edit-container">
+  <div class="complete-container">
+  <p>Mark as completed:</p>
+<form class="form" action="/todos/{{_id}}/edit" method="post">
+<input class="done-input" type="checkbox" value="true" name="done" {{#if done}}checked{{/if}}>
+</div>
+  <input
+    class="edit-input"
+    type="text"
+    name="description"
+    value={{description}}
+  />
+  </div>
+  <div class="buttons">
+  <input class="btn btn--save" type="submit" value="Save" />
+</form>
+</div>

@@ -1,0 +1,23 @@
+<h2>&lt;/Your Todo-list&gt;/</h2>
+<div class="filter">
+  <p>Filter:</p>
+  <a href="/todos">All</a>
+  <a href="/todos/complete">Complete</a>
+  <a href="/todos/incomplete">incomplete</a>
+  </div>
+  <div class="sort">
+    <p>Sort by created:</p>
+<a href="/todos/ascending">Ascending</a>
+<a href="/todos/descending">Descending</a>
+  </div>
+  <ul>
+    {{#each todos}}
+
+      <a class="todo {{done}}" href="/todos/{{_id}}"><li
+        >{{description}}</li></a>
+    {{/each}}
+  </ul>
+  <div class="main-buttons">
+    <a href="/todos/new" class="btn btn--new">New Todo</a>
+  </div>
+</div>
